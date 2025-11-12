@@ -9,7 +9,7 @@ jobs:
         - name: Hello! 
           run: echo "GKJ-001 Workflow"
         - name: checkout
-          uses: actions/checkout@latest
+          uses: actions/checkout@v5.0
         
         - name: List Files 
           run: ls 
