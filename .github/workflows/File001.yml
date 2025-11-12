@@ -8,12 +8,22 @@ jobs:
         steps:
         - name: Hello! 
           run: echo "GKJ-001 Workflow"
+
         - name: checkout
           uses: actions/checkout@v5
-        
-        - name: List Files 
-          run: ls 
 
-        - name: Read file 
-          run: cat README.md
+        - name: Job001
+          run: |
+           echo "My Job001"
+           ls -ltra
+           cat README.MD
+        
+        - name: Generate ASCII Artwork
+         run: cowsay -f dragon "Run for Cover, I an DRAGON.." >> dragon.txt
+            
+        # - name: List Files 
+        #   run: ls 
+
+        # - name: Read file 
+        #   run: cat README.md
 
