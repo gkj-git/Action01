@@ -8,8 +8,9 @@ jobs:
         steps:
         - name: Hello! 
           run: echo "GKJ-001 Workflow"
-         
-          
+        - name: checkout
+          uses: actions/checkout@latest
+        
         - name: List Files 
           run: ls 
 
