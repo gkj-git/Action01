@@ -15,11 +15,11 @@ jobs:
       - name: Execute Cowsay cmd
         run: cowsay -f dragon "Run for Cover, I an DRAGON.." >> dragon.txt
 
-      - name: Generate ASCII (image/text)
+      - name: Test File exists
         run: grep -i "dragon" dragon.txt
 
       - name: Read File
         run: cat dragon.txt
 
-      - name: Checkout repo files 
+      - name: list repo files 
         run: ls -ltra
