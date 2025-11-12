@@ -12,15 +12,10 @@ jobs:
         - name: checkout
           uses: actions/checkout@v5
 
-        - name: Job001
+        - name: Executing Shell script
           run: |
-           echo "My Job001"
-           ls -ltra
-           cat README.MD
-        
-        - name: Generate ASCII Artwork
-          run: cowsay -f dragon "Run for Cover, I an DRAGON.." >> dragon.txt
-         
+           chmod +x ./ascii.script.sh
+           ./ascii.script.sh
          
         # - name: List Files 
         #   run: ls 
